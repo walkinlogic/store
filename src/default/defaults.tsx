@@ -178,7 +178,7 @@ export const AboutData: {
   heading: "Unique and Authentic Vintage Designer Jewellery",
   image: aboutImg,
   detail:
-    "This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.",
+    "For the nomadic fashion spirit of now. We specialize in an exclusive collections of casual, semi-formal and formal for your wardrobe. Our garments are designed with care and love to incorporate global fashion as well as tradition.",
   item: [
     {
       heading: "Using Good Quality Materials",
@@ -209,7 +209,7 @@ export const FooterData: {
   contact: { id: number; link: string; label: string }[];
 } = {
   logo: FooterLogo,
-  siteName: 'Dine Market',
+  siteName: 'Khaadi',
   detail:
     "Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made",
   social: [
