@@ -14,7 +14,7 @@ import ProductImg9 from "./../assets/products/9.png";
 import ProductImg10 from "./../assets/products/10.png";
 import ProductImg11 from "./../assets/products/11.png";
 import aboutImg from "./../assets/about/1.png";
-import FooterLogo from "./../assets/Logo.webp";
+import FooterLogo from "./../assets/logo.svg";
 import { FaTwitter, FaInstagram, FaGithub, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 export const BannerBreands: { id: number; alt: string; logo: any }[] = [
   { id: 1, alt: "inStyle logo", logo: inStyleLogo },
