@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link"; 
+import Link from "next/link";
 import Image from "next/image";
 import cartImg from "@/assets/icons/shopping-cart.png";
 import { BannerBreands, AboutData } from "../default/defaults";
@@ -8,7 +8,7 @@ import PromotionEvent from "@/components/promotionEvent";
 import ProductStyle1 from "@/components/products/Slider";
 import SectionHeader from "@/components/SectionHeader";
 import TextOverlay from "@/components/textOverlay";
-import NewsLetter from "@/components/newsletter"; 
+import NewsLetter from "@/components/newsletter";
 export default function Home() {
   return (
     <main className="">
@@ -39,8 +39,7 @@ const Banner = () => {
             An Industrial Take on Streetwear
           </h1>
           <p className="text-gray-950 h-fit max-w-sm">
-            Anyone can beat you but no one can beat your outfit as long as you
-            wear Dine outfits.
+            Online shopping for women&#39;s/Kids/Men ready to wear designer dresses with kurta design shalwar kameez design 3 piece suits, trouser design.
           </p>
           <Link
             href=""

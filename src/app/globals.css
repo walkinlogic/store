@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@100;200;300;400;500;600;700;800&display=Helvetica');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -39,10 +39,6 @@ nav li {
 
 }
 
-/* nav li:hover {
-  background-color: aliceblue;
-  transition: .5s;
-} */
 
 nav ul {
   display: flex;
@@ -76,12 +72,14 @@ nav li input {
   transition: .8s;
   background-color: rgba(255, 255, 255, 0.761);
 }
-body{
+
+body {
   scroll-behavior: smooth;
 }
-.stickyNav { 
+
+.stickyNav {
   position: -webkit-sticky;
-  position: sticky; 
+  position: sticky;
   top: 0;
   backdrop-filter: blur(12px);
   z-index: 999;
@@ -113,11 +111,13 @@ body{
   letter-spacing: .02em;
   color: #666;
 }
+
 footer li:first-child {
   margin-top: 25px;
 }
 
-footer li, footer p {
+footer li,
+footer p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 22px;
@@ -126,18 +126,9 @@ footer li, footer p {
 
 main {
   width: 100%;
-  position: relative; 
+  position: relative;
 }
-.product-size label:has(input:checked){
+
+.product-size label:has(input:checked) {
   @apply bg-gray-300
 }
-
-
-
-
-
-
-
-
-
-
