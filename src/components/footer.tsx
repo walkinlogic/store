@@ -38,7 +38,7 @@ const Footer = () => {
             <h3>Support</h3>
             <ul>
               {FooterData.support.map((res) => (
-                <li  key={res.id} className="mb-3">{res.label}</li>
+                <li key={res.id} className="mb-3">{res.label}</li>
               ))}
             </ul>
           </div>
@@ -46,35 +46,35 @@ const Footer = () => {
             <h3>Contact</h3>
             <ul>
               {FooterData.contact.map((res) => (
-                <li  key={res.id} className="mb-3">{res.label}</li>
+                <li key={res.id} className="mb-3">{res.label}</li>
               ))}
             </ul>
           </div>
         </div>
       </div>
-      <FooterLabel/>
+      <FooterLabel />
     </footer>
   );
 };
 
-const FooterLabel = () =>{
-    return(
-        <div className="border-t border py-8 border-t-black border-solid">
-        <div className="container max-w-6xl mx-auto text-gray-900">
-            <div className="grid grid-cols-3 justify-between">
-                <div className="text-start">
-                    <p className="text-gray-600 font-md">Copyright © {new Date().getFullYear()} Dine Market</p>
-                </div>
-                <div className="text-center">
-                    <p className="text-gray-600 font-md">Design by. <Link className="font-lg text-gray-950 font-bold  " href='https://nexu.netlify.app/' target="_blank"> Nexu Solutions</Link> </p>
-                </div>
-                <div className="text-end">
-                <p className="text-gray-600 font-md">Code by. <Link className="font-lg text-gray-950 font-bold  " href='https://github.com/MustafaGhouri' target="_blank">MustafaGhouri on GitHub</Link> </p>
-                </div>
-            </div>
+const FooterLabel = () => {
+  return (
+    <div className="border-t border py-8 border-t-black border-solid">
+      <div className="container max-w-6xl mx-auto text-gray-900">
+        <div className="grid grid-cols-3 justify-between">
+          <div className="text-start">
+            <p className="text-gray-600 font-md">Copyright © {new Date().getFullYear()} Micromerger</p>
+          </div>
+          <div className="text-center">
+            <p className="text-gray-600 font-md">Design by. <Link className="font-lg text-gray-950 font-bold  " href='https://nexu.netlify.app/' target="_blank"> Haroon Abbas</Link> </p>
+          </div>
+          <div className="text-end">
+            <p className="text-gray-600 font-md">Code by. <Link className="font-lg text-gray-950 font-bold  " href='https://github.com/walkinlogic' target="_blank">walkinlogic on GitHub</Link> </p>
+          </div>
         </div>
-        </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default Footer;
