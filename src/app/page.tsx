@@ -33,7 +33,7 @@ const Banner = () => {
       <div className="grid grid-cols-1 p-10 lg:px-0 lg:grid-cols-2 gap-4">
         <div className=" gap-7 pt-6   flex flex-col">
           <span className="bg-blue-100  text-blue-700 px-4 h-fit w-fit rounded-md py-2">
-            Sale 70%
+            Sale upto 70%
           </span>
           <h1 className="text-gray-950 h-fit text-4xl lg:text-6xl font-sans font-medium">
             An Industrial Take on Streetwear

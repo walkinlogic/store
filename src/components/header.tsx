@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import BrandLogo from "../assets/Logo.webp";
+import BrandLogo from "../assets/logo.svg";
 import Link from "next/link";
 import { navigation } from "@/default/navigation";
 import { FaSearch } from "react-icons/fa";
@@ -54,7 +54,7 @@ const Header = () => {
                 <Link href={"/"}>
                   <Image
                     src={BrandLogo}
-                    alt="Picture of the author"
+                    alt="Khaadi"
                     className=" w-100 h-100"
                     width={140}
                     placeholder="blur"
