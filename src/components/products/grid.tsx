@@ -3,8 +3,8 @@ import { client } from "@/lib/sanityClient";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { BsSortNumericUp, BsSortNumericUpAlt } from "react-icons/bs"; 
- 
+import { BsSortNumericUp, BsSortNumericUpAlt } from "react-icons/bs";
+
 import { urlForImage } from "../../../sanity/lib/image";
 import { IProduct } from "@/interfaces";
 
@@ -21,8 +21,7 @@ const ProductGrid = ({
   const FetchProduct = async () => {
     await client
       .fetch(
-        `*[_type == 'product' ${
-          param != "" ? `&& category->slug.current == '${param}'` : ""
+        `*[_type == 'product' ${param != "" ? `&& category->slug.current == '${param}'` : ""
         } ]| order(_createdAt desc){
       title,
       _id,
@@ -111,9 +110,13 @@ const ProductGrid = ({
                   <h2 className="text-gray-900 font-medium font-sora ">
                     {res.title}
                   </h2>
-                  <p className="text-gray-400 mt-1 capitalize font-medium">
-                    {res.tags.title}
-                  </p>
+                  {res.tags ? (
+                    <p className="text-gray-400 mt-1 capitalize font-medium">
+                      {res.tags.title}
+                    </p>
+                  ) : (
+                    ""
+                  )}
                   <h2 className="text-gray-900 mt-2 font-semibold font-sora text-2xl">
                     $ {res.price}
                   </h2>
@@ -129,11 +132,10 @@ const ProductGrid = ({
                 <button
                   key={index + 1}
                   onClick={() => handlePageChange(index + 1)}
-                  className={`mx-1 px-3 py-1 rounded ${
-                    currentPage === index + 1
-                      ? "bg-gray-500 text-white"
-                      : "bg-gray-200"
-                  }`}
+                  className={`mx-1 px-3 py-1 rounded ${currentPage === index + 1
+                    ? "bg-gray-500 text-white"
+                    : "bg-gray-200"
+                    }`}
                 >
                   {index + 1}
                 </button>
@@ -143,7 +145,7 @@ const ProductGrid = ({
         </>
       ) : (
         <div className="grid lg:p-0 p-5 text-gray-950 sm:grid-cols-6  lg:grid-cols-12 grid-cols-3 gap-4">
-        
+
         </div>
       )}
     </div>
