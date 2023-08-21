@@ -112,7 +112,7 @@ export const POST = async (request: Request) => {
             return NextResponse.json({ err });
         }
     } else {
-
+        console.log("req", req);
 
         try {
             const res = await db.insert(cartTable).values({
@@ -128,6 +128,7 @@ export const POST = async (request: Request) => {
             return NextResponse.json({ res: 'success', countCart: countproduct[0].id });
         }
         catch (err) {
+            console.log("err", err);
             return NextResponse.json({ err });
         }
     }
