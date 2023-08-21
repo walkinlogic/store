@@ -141,3 +141,7 @@ main {
   width: auto;
   padding: 10px;
 }
+
+.bg-gray-950 {
+  color: #fff;
+}
