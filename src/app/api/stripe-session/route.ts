@@ -17,9 +17,9 @@ export async function POST(request: NextRequest) {
         mode: "payment",
         payment_method_types: ["card"],
         billing_address_collection: "auto",
-        shipping_options: [
-          { shipping_rate: "shr_1NQvFzEhtGsvhu7HnDKBjzQi" }, 
-        ],
+        // shipping_options: [
+        //   { shipping_rate: "shr_1NQvFzEhtGsvhu7HnDKBjzQi" }, 
+        // ],
         invoice_creation: {
           enabled: true,
         },
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
               },
               unit_amount: item.price * 100,
             },
-            quantity: item.qty, 
+            quantity: item.qty,
           };
         }),
         phone_number_collection: {
