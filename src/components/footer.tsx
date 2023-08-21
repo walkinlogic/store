@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="border-t">
       <div className="container max-w-6xl mx-auto text-gray-900">
         <div className="grid grid-cols-1   lg:grid-cols-5  p-10  gap-4">
 
@@ -65,12 +65,12 @@ const FooterLabel = () => {
           <div className="text-start">
             <p className="text-gray-600 font-md">Copyright © {new Date().getFullYear()} Micromerger</p>
           </div>
+          <div className="text-center">
+            <p className="text-gray-600 font-md"> </p>
+          </div>
           <div className="text-end">
             <p className="text-gray-600 font-md">Design & Developed by. <Link className="font-lg text-gray-950 font-bold  " href='#' target="_blank"> Haroon Abbas</Link> </p>
           </div>
-          {/* <div className="text-end">
-            <p className="text-gray-600 font-md">Code by. <Link className="font-lg text-gray-950 font-bold  " href='https://github.com/walkinlogic' target="_blank">walkinlogic on GitHub</Link> </p>
-          </div> */}
         </div>
       </div>
     </div>

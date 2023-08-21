@@ -84,7 +84,7 @@ body {
   backdrop-filter: blur(12px);
   z-index: 999;
   transition: .8s;
-  background-color: rgba(223, 253, 253, 0.761);
+  background-color: #f1f1f1;
 }
 
 .align-items-end {
@@ -127,6 +127,10 @@ footer p {
 main {
   width: 100%;
   position: relative;
+}
+
+.border-t-black {
+  background-color: #f1f1f1;
 }
 
 .product-size label:has(input:checked) {
