@@ -79,7 +79,7 @@ const ProductDetails = (params: any) => {
                   <label
                     htmlFor={res.title}
                     key={i}
-                    className="w-12 h-12 flex ali align-items-center pt-3 justify-center bg-cyan-50 rounded-md cursor-pointer  checked:bg-slate-600"
+                    className="w-auto h-12 flex ali align-items-center pt-3 justify-center bg-cyan-50 rounded-md cursor-pointer  checked:bg-slate-600"
                   >
                     {res.title}
                     <input

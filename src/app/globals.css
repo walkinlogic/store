@@ -136,3 +136,8 @@ main {
 .product-size label:has(input:checked) {
   @apply bg-gray-300
 }
+
+.w-auto {
+  width: auto;
+  padding: 10px;
+}
