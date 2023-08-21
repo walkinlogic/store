@@ -61,7 +61,7 @@ const Header = () => {
                   />
                 </Link>
               </div>
-              <div className="hidden w-full  ml-6 sm:block">
+              <div className="hidden w-full  ml-6 flex items-center">
                 <div className="grid w-full grid-cols-12 justify-evenly ">
                   <div className="col-span-7">
                     <div className="flex mx-auto align-middle  ">
